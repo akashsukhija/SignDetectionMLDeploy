@@ -31,7 +31,7 @@ datagen = ImageDataGenerator(rescale=1./255, rotation_range=10, width_shift_rang
 datagen.fit(X_train)
 generator = datagen.flow(X_train, y_train, batch_size= 128)
 
-
+#Neural Network Creation
 model = Sequential()
 model.add(Conv2D(filters=128,kernel_size= 7, input_shape = (28,28,1), activation='relu' ))
 model.add(MaxPool2D(pool_size=2,strides=2))
