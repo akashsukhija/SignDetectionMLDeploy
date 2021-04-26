@@ -45,7 +45,7 @@ model.compile(optimizer = 'adam' , loss = 'categorical_crossentropy' , metrics =
 
 history = model.fit(generator,
                    validation_data=(X_test,y_test),
-                   epochs=1)
+                   epochs=10)
 
 
 
